@@ -21,4 +21,4 @@ outputs:
     description: "Created package's name"
 runs:
   using: 'docker'
-  image: 'docker://blinktag/nfpm:v2.3.1'
+  image: 'docker://blinktag/nfpm:v2.27.1'

@@ -23,13 +23,13 @@
 ## Example usage
 
     - name: Create deb package
-      uses: skynet-core/nfpm@v2.3
+      uses: blinktag/nfpm@v2.27.1
       id: deb-package
       with:
         config: "custom.yaml"
         packager: "deb"
     - name: Create rpm package
-      uses: skynet-core/nfpm@v2.3
+      uses: blinktag/nfpm@v2.27.1
       id: rpm-package
       with:
         config: "custom.yaml"

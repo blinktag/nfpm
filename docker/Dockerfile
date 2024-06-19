@@ -1,9 +1,9 @@
-ARG ALPINE_VERSION=3.12
-ARG GO_VERSION=1.16
+ARG ALPINE_VERSION=3.20
+ARG GO_VERSION=1.22.4
 
 FROM golang:${GO_VERSION}-alpine${ALPINE_VERSION}
 
-ARG NFPM_VERSION=2.3.1
+ARG NFPM_VERSION=2.27.1
 ENV NFPM_VERSION=${NFPM_VERSION}
 
 RUN echo "Packaging nfpm version: ${NFPM_VERSION}" && apk update && apk upgrade && apk add --no-cache git bash sudo && \
